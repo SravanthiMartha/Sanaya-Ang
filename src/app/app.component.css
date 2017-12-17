@@ -1,0 +1,8 @@
+.side{
+    width:20%;
+    float:left;
+}
+.main{
+    float:left;
+    width:80%;
+}
