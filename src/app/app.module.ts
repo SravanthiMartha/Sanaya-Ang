@@ -8,6 +8,8 @@ import {sideComponent}  from '../sideBar/sideBar.component';
 import {footComponent} from '../footer/foot.component';
 import {ContentComponent} from '../content/content.component'
 
+import {AppRoutingModule} from '../content/app-routing.module';
+import { AuthGuard } from '../dashboard/auth.guard';
 
 @NgModule({
   declarations: [
@@ -19,9 +21,10 @@ import {ContentComponent} from '../content/content.component'
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

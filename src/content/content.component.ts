@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { PriceService } from './price.service';
+
 @Component({
   selector: 'content-nav',
   templateUrl: './content.component.html',
