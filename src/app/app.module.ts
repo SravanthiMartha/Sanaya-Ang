@@ -4,13 +4,12 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from '../topNav/topNav.component';
-import {sideComponent}  from '../sideBar/sideBar.component';
+import {sideComponent} from '../sideBar/sideBar.component';
 import {footComponent} from '../footer/foot.component';
 import {ContentComponent} from '../content/content.component'
 
-import {AppRoutingModule} from '../content/app-routing.module';
-import { AuthGuard } from '../dashboard/auth.guard';
-
+import {ContentRoutingModule} from '../content/content-routing.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,9 +21,10 @@ import { AuthGuard } from '../dashboard/auth.guard';
   imports: [
     BrowserModule,
     HttpModule,
-    AppRoutingModule
+    ContentRoutingModule,
+    ReactiveFormsModule ,
   ],
-  providers: [AuthGuard],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

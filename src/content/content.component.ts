@@ -8,6 +8,7 @@ import { PriceService } from './price.service';
   providers:[PriceService]
 })
 export class ContentComponent {
+  name = 'shravan';
   title = 'content';
   currency = 'GBP';
   price: number;
