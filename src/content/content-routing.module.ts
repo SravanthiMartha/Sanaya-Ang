@@ -1,7 +1,7 @@
 import {Routes, RouterModule} from "@angular/router";
 
 import {NgModule} from "@angular/core";
-
+import { DialogComponent } from './model-dialog/dialog.component';
 const routes: Routes = [
   {
     path: 'article',
@@ -20,6 +20,10 @@ const routes: Routes = [
     path: 'angular-form',
     loadChildren: './angular-form/angular-form.module#AngularFormModule'
   },
+  {
+    path: 'dialog',
+    component: DialogComponent 
+  }
   
 ];
 
